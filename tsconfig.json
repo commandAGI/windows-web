@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "Bundler",
+		"allowImportingTsExtensions": true,
+		"verbatimModuleSyntax": true,
+		"sourceMap": true,
+		"lib": ["ESNext", "DOM"],
+		"strict": false,
+		"esModuleInterop": true,
+		"noEmit": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"target": "esnext",
+		"module": "esnext",
+		"resolveJsonModule": true,
+		"paths": {
+			"~/*": ["./src/*"]
+		},
+		"allowJs": true,
+		"checkJs": true
+	},
+	"include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "./*.ts"],
+	"exclude": ["node_modules/**/*"]
+}

@@ -1,0 +1,111 @@
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+	font-size: 14px;
+	color: #1a1a1a;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	user-select: none;
+}
+
+button {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	border: none;
+	cursor: default;
+	outline: none;
+}
+
+input,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	outline: none;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.35);
+}
+
+/* ===== Root container ===== */
+#root {
+	width: 100%;
+	height: 100%;
+	isolation: isolate;
+}
+
+/* ===== Windows 11 Design Tokens ===== */
+:root {
+	/* Accent colors */
+	--win-accent: #0078D4;
+	--win-accent-light: #60CDFF;
+	--win-accent-dark: #005A9E;
+	--win-accent-hover: #1a86d8;
+
+	/* Surface colors */
+	--win-surface: #F3F3F3;
+	--win-surface-card: #FFFFFF;
+	--win-surface-flyout: rgba(243, 243, 243, 0.96);
+	--win-surface-stroke: rgba(0, 0, 0, 0.0578);
+	--win-surface-stroke-default: rgba(0, 0, 0, 0.06);
+
+	/* Text colors */
+	--win-text-primary: rgba(0, 0, 0, 0.8956);
+	--win-text-secondary: rgba(0, 0, 0, 0.6063);
+	--win-text-disabled: rgba(0, 0, 0, 0.3614);
+	--win-text-on-accent: #FFFFFF;
+
+	/* Background fills */
+	--win-bg-card-default: rgba(255, 255, 255, 0.7);
+	--win-bg-card-secondary: rgba(249, 249, 249, 0.5);
+	--win-bg-smoke: rgba(0, 0, 0, 0.3);
+	--win-bg-mica: rgba(243, 243, 243, 0.72);
+	--win-bg-acrylic: rgba(252, 252, 252, 0.85);
+
+	/* Elevation / shadows */
+	--win-shadow-flyout: 0px 8px 16px rgba(0, 0, 0, 0.14);
+	--win-shadow-dialog: 0px 2px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.14);
+	--win-shadow-window: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 8px 32px rgba(0, 0, 0, 0.14);
+	--win-shadow-window-active: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 8px 32px rgba(0, 0, 0, 0.20);
+
+	/* Rounded corners */
+	--win-radius-sm: 4px;
+	--win-radius-md: 8px;
+	--win-radius-lg: 12px;
+
+	/* Mica / Acrylic */
+	--win-mica-blur: 20px;
+
+	/* Taskbar height */
+	--taskbar-height: 48px;
+}
