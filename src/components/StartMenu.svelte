@@ -10,12 +10,24 @@
 	const pinnedApps: PinnedApp[] = [
 		{ id: 'edge', label: 'Edge', icon: '\uD83C\uDF10' },
 		{ id: 'file-explorer', label: 'File Explorer', icon: '\uD83D\uDCC1' },
+		{ id: 'mail', label: 'Mail', icon: '\uD83D\uDCE7' },
+		{ id: 'calendar', label: 'Calendar', icon: '\uD83D\uDCC5' },
+		{ id: 'store', label: 'Store', icon: '\uD83D\uDECD\uFE0F' },
 		{ id: 'settings', label: 'Settings', icon: '\u2699\uFE0F' },
 		{ id: 'notepad', label: 'Notepad', icon: '\uD83D\uDCDD' },
 		{ id: 'terminal', label: 'Terminal', icon: '\uD83D\uDCBB' },
 		{ id: 'calculator', label: 'Calculator', icon: '\uD83D\uDD22' },
-		{ id: 'task-manager', label: 'Task Manager', icon: '\uD83D\uDCCA' },
 		{ id: 'photos', label: 'Photos', icon: '\uD83D\uDDBC\uFE0F' },
+		{ id: 'paint', label: 'Paint', icon: '\uD83C\uDFA8' },
+		{ id: 'clock', label: 'Clock', icon: '\uD83D\uDD50' },
+		{ id: 'weather', label: 'Weather', icon: '\uD83C\uDF24\uFE0F' },
+		{ id: 'maps', label: 'Maps', icon: '\uD83D\uDDFA\uFE0F' },
+		{ id: 'music', label: 'Music', icon: '\uD83C\uDFB5' },
+		{ id: 'videos', label: 'Videos', icon: '\uD83C\uDFAC' },
+		{ id: 'snipping-tool', label: 'Snipping Tool', icon: '\u2702\uFE0F' },
+		{ id: 'wordpad', label: 'WordPad', icon: '\uD83D\uDCC4' },
+		{ id: 'task-manager', label: 'Task Manager', icon: '\uD83D\uDCCA' },
+		{ id: 'disk-cleanup', label: 'Disk Cleanup', icon: '\uD83E\uDDF9' },
 	];
 
 	interface RecommendedItem {
@@ -290,9 +302,11 @@
 
 	.pinned-grid {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 		gap: 2px;
 		padding: 8px 20px 16px;
+		max-height: 260px;
+		overflow-y: auto;
 	}
 
 	.pinned-item {

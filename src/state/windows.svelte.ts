@@ -8,7 +8,19 @@ export type AppID =
 	| 'terminal'
 	| 'calculator'
 	| 'task-manager'
-	| 'photos';
+	| 'photos'
+	| 'paint'
+	| 'clock'
+	| 'weather'
+	| 'mail'
+	| 'calendar'
+	| 'maps'
+	| 'music'
+	| 'videos'
+	| 'store'
+	| 'snipping-tool'
+	| 'wordpad'
+	| 'disk-cleanup';
 
 export interface WindowState {
 	x: number;
@@ -124,6 +136,126 @@ export const appConfigs: Record<AppID, AppConfig> = {
 		defaultHeight: 620,
 		minWidth: 400,
 		minHeight: 300,
+		pinned: false,
+	},
+	paint: {
+		id: 'paint',
+		title: 'Paint',
+		icon: '🎨',
+		defaultWidth: 900,
+		defaultHeight: 620,
+		minWidth: 500,
+		minHeight: 400,
+		pinned: false,
+	},
+	clock: {
+		id: 'clock',
+		title: 'Clock',
+		icon: '🕐',
+		defaultWidth: 500,
+		defaultHeight: 600,
+		minWidth: 360,
+		minHeight: 400,
+		pinned: false,
+	},
+	weather: {
+		id: 'weather',
+		title: 'Weather',
+		icon: '🌤️',
+		defaultWidth: 800,
+		defaultHeight: 600,
+		minWidth: 400,
+		minHeight: 350,
+		pinned: false,
+	},
+	mail: {
+		id: 'mail',
+		title: 'Mail',
+		icon: '📧',
+		defaultWidth: 900,
+		defaultHeight: 620,
+		minWidth: 500,
+		minHeight: 400,
+		pinned: true,
+	},
+	calendar: {
+		id: 'calendar',
+		title: 'Calendar',
+		icon: '📅',
+		defaultWidth: 850,
+		defaultHeight: 580,
+		minWidth: 500,
+		minHeight: 400,
+		pinned: false,
+	},
+	maps: {
+		id: 'maps',
+		title: 'Maps',
+		icon: '🗺️',
+		defaultWidth: 900,
+		defaultHeight: 620,
+		minWidth: 500,
+		minHeight: 400,
+		pinned: false,
+	},
+	music: {
+		id: 'music',
+		title: 'Music',
+		icon: '🎵',
+		defaultWidth: 800,
+		defaultHeight: 580,
+		minWidth: 450,
+		minHeight: 400,
+		pinned: false,
+	},
+	videos: {
+		id: 'videos',
+		title: 'Videos',
+		icon: '🎬',
+		defaultWidth: 900,
+		defaultHeight: 620,
+		minWidth: 400,
+		minHeight: 350,
+		pinned: false,
+	},
+	store: {
+		id: 'store',
+		title: 'Microsoft Store',
+		icon: '🛍️',
+		defaultWidth: 900,
+		defaultHeight: 640,
+		minWidth: 500,
+		minHeight: 400,
+		pinned: true,
+	},
+	'snipping-tool': {
+		id: 'snipping-tool',
+		title: 'Snipping Tool',
+		icon: '✂️',
+		defaultWidth: 700,
+		defaultHeight: 500,
+		minWidth: 400,
+		minHeight: 300,
+		pinned: false,
+	},
+	wordpad: {
+		id: 'wordpad',
+		title: 'WordPad',
+		icon: '📄',
+		defaultWidth: 850,
+		defaultHeight: 600,
+		minWidth: 400,
+		minHeight: 300,
+		pinned: false,
+	},
+	'disk-cleanup': {
+		id: 'disk-cleanup',
+		title: 'Disk Cleanup',
+		icon: '🧹',
+		defaultWidth: 500,
+		defaultHeight: 550,
+		minWidth: 400,
+		minHeight: 400,
 		pinned: false,
 	},
 };

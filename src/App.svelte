@@ -12,6 +12,18 @@
 	import Calculator from './components/apps/Calculator.svelte';
 	import TaskManager from './components/apps/TaskManager.svelte';
 	import Photos from './components/apps/Photos.svelte';
+	import Paint from './components/apps/Paint.svelte';
+	import Clock from './components/apps/Clock.svelte';
+	import Weather from './components/apps/Weather.svelte';
+	import Mail from './components/apps/Mail.svelte';
+	import Calendar from './components/apps/Calendar.svelte';
+	import Maps from './components/apps/Maps.svelte';
+	import Music from './components/apps/Music.svelte';
+	import Videos from './components/apps/Videos.svelte';
+	import Store from './components/apps/Store.svelte';
+	import SnippingTool from './components/apps/SnippingTool.svelte';
+	import WordPad from './components/apps/WordPad.svelte';
+	import DiskCleanup from './components/apps/DiskCleanup.svelte';
 	import { wm, appConfigs, type AppID } from './state/windows.svelte.ts';
 	import { preferences, applyPreferences } from './state/preferences.svelte';
 
@@ -34,6 +46,18 @@
 		calculator: Calculator,
 		'task-manager': TaskManager,
 		photos: Photos,
+		paint: Paint,
+		clock: Clock,
+		weather: Weather,
+		mail: Mail,
+		calendar: Calendar,
+		maps: Maps,
+		music: Music,
+		videos: Videos,
+		store: Store,
+		'snipping-tool': SnippingTool,
+		wordpad: WordPad,
+		'disk-cleanup': DiskCleanup,
 	};
 
 	// Rubber band selection state
