@@ -4,6 +4,7 @@ import { browserslistToTargets } from 'lightningcss';
 import browserslist from 'browserslist';
 
 export default defineConfig({
+	base: './',
 	plugins: [svelte()],
 	resolve: {
 		alias: {
